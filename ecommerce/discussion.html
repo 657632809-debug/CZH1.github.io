@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动讨论区 - 电子商务物流管理</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>电子商务物流管理</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="syllabus.html">教学大纲</a></li>
+                        <li><a href="resources.html">学习资源</a></li>
+                        <li><a href="assignments.html">作业与测验</a></li>
+                        <li><a href="discussion.html">互动讨论</a></li>
+                        <li><a href="grades.html">成绩查询</a></li>
+                        <li><a href="calendar.html">课程日历</a></li>
+                        <li><a href="projects.html">项目展示</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="discussion">
+            <div class="container">
+                <h2>互动讨论区</h2>
+                
+                <div class="discussion-forums">
+                    <h3>讨论专区</h3>
+                    
+                    <div class="forum-category">
+                        <h4>Q&A问答区</h4>
+                        <div class="forum-list">
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>如何获取教材配套的电子教案和题库？</h5>
+                                    <p>作者：张三 | 发布时间：2025-03-10 | 回复：5</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>请问在哪里可以下载到与教材配套的电子教案和题库资源？...</p>
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>实训报告需要包含哪些内容？</h5>
+                                    <p>作者：李四 | 发布时间：2025-03-08 | 回复：8</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>第一次写实训报告，想知道需要包含哪些具体内容？...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forum-category">
+                        <h4>案例讨论区</h4>
+                        <div class="forum-list">
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>讨论：京东自营物流的优势与挑战</h5>
+                                    <p>作者：王五 | 发布时间：2025-03-12 | 回复：12</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>结合京东物流的实际案例，分析自营物流模式的优势和面临的挑战...</p>
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>双十一物流调度案例分析</h5>
+                                    <p>作者：赵六 | 发布时间：2025-03-05 | 回复：15</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>探讨双十一期间各大电商平台的物流调度策略...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forum-category">
+                        <h4>实训交流区</h4>
+                        <div class="forum-list">
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>仓储规划实训心得体会</h5>
+                                    <p>作者：孙七 | 发布时间：2025-03-14 | 回复：6</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>分享我在仓储规划实训中的经验和心得体会...</p>
+                                </div>
+                            </div>
+                            <div class="forum-item">
+                                <div class="forum-info">
+                                    <h5>物流成本核算实训遇到的问题</h5>
+                                    <p>作者：周八 | 发布时间：2025-03-13 | 回复：9</p>
+                                </div>
+                                <div class="forum-preview">
+                                    <p>在做物流成本核算实训时遇到了一些问题，希望大家能帮忙解答...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create-thread">
+                    <h3>发布新主题</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="thread-title">主题标题：</label>
+                            <input type="text" id="thread-title" name="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="thread-category">选择分类：</label>
+                            <select id="thread-category" name="category" required>
+                                <option value="">请选择分类</option>
+                                <option value="qa">Q&A问答区</option>
+                                <option value="case">案例讨论区</option>
+                                <option value="training">实训交流区</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="thread-content">内容：</label>
+                            <textarea id="thread-content" name="content" rows="8" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="发布主题">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="faq-section">
+                    <h3>常见问题</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h4>问题1：如何获取教材配套的电子教案和题库？</h4>
+                            <p>答案：可联系出版社或授课教师，提供课程选课证明后申请获取，部分资源将上传至学习资源板块。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>问题2：实训报告需要包含哪些内容？</h4>
+                            <p>答案：需涵盖实训目标、内容与要求、实施过程、数据分析、问题解决方法及实训体会，格式参照A4纸打印的正式文档标准。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>问题3：课程成绩如何构成？</h4>
+                            <p>答案：理论成绩（40%，含测验、作业）+ 实训成绩（50%，含实训报告、案例分析）+ 课堂参与（10%）。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>问题4：哪些物流信息技术需要重点掌握？</h4>
+                            <p>答案：条码技术、RFID技术、GIS/GPS应用及电子订货系统（EOS）、销售时点系统（POS）的核心操作逻辑。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>电子商务物流管理</h3>
+                    <p>主编团队：李菁、曾德华、陆玉馨</p>
+                    <p>联系方式：可联系出版社获取</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="syllabus.html">教学大纲</a></li>
+                        <li><a href="resources.html">学习资源</a></li>
+                        <li><a href="assignments.html">作业与测验</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 电子商务物流管理课程. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

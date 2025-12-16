@@ -1,0 +1,964 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F5F7FA;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+header {
+    background-color: #1E88E5;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF9800;
+}
+
+/* 主内容区域 */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    color: #1E88E5;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section h4 {
+    color: #333;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* 首页样式 */
+#hero {
+    background-color: #1E88E5;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#highlights {
+    background-color: white;
+    padding: 3rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #F5F7FA;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-item h3 {
+    color: #1E88E5;
+    margin-bottom: 0.8rem;
+}
+
+#notifications, #training-reminders {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-list, .training-list {
+    margin-top: 1.5rem;
+}
+
+.notification-item, .training-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F5F7FA;
+    border-left: 4px solid #1E88E5;
+    border-radius: 4px;
+}
+
+.notification-date {
+    font-weight: bold;
+    color: #1E88E5;
+    margin-right: 0.5rem;
+}
+
+.training-item h3 {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* 教学大纲样式 */
+.course-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.course-info ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.course-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.weekly-schedule {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.syllabus-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    overflow-x: auto;
+    display: block;
+}
+
+.syllabus-table th, .syllabus-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.syllabus-table th {
+    background-color: #1E88E5;
+    color: white;
+    font-weight: bold;
+}
+
+.syllabus-table tr:hover {
+    background-color: #F5F7FA;
+}
+
+.grading-criteria {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.grading-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.grading-table th, .grading-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.grading-table th {
+    background-color: #1E88E5;
+    color: white;
+    font-weight: bold;
+}
+
+.learning-advice {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learning-advice ol {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.learning-advice li {
+    margin-bottom: 1rem;
+}
+
+/* 学习资源样式 */
+.resource-search {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resource-search input {
+    width: 70%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.resource-search button {
+    padding: 0.8rem 1.5rem;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.resource-categories {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource-category {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.resource-category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resource-list {
+    margin-top: 1rem;
+}
+
+.resource-item {
+    background-color: #F5F7FA;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.resource-item h5 {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1E88E5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.download-btn:hover {
+    background-color: #1565C0;
+}
+
+/* 作业与测验样式 */
+.assignment-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.submission-form form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input[type="submit"] {
+    padding: 0.8rem 2rem;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.deadline {
+    color: #FF9800;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.review-questions, .quiz-list {
+    margin-top: 1.5rem;
+}
+
+.question-item, .quiz-item {
+    background-color: #F5F7FA;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.question-item h4, .quiz-item h4 {
+    color: #1E88E5;
+    margin-bottom: 0.8rem;
+}
+
+.quiz-info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.start-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #1E88E5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.start-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 互动讨论区样式 */
+.forum-category {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.forum-list {
+    margin-top: 1rem;
+}
+
+.forum-item {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #F5F7FA;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.forum-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-info h5 {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.forum-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.create-thread {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.faq-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-list {
+    margin-top: 1.5rem;
+}
+
+.faq-item {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #F5F7FA;
+    border-radius: 8px;
+}
+
+.faq-item h4 {
+    color: #1E88E5;
+    margin-bottom: 0.8rem;
+}
+
+/* 成绩查询样式 */
+.grade-overview {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.grade-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.grade-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #F5F7FA;
+    border-radius: 8px;
+}
+
+.grade-label {
+    display: block;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.grade-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+}
+
+.grade-percentage {
+    display: block;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.total-grade {
+    background-color: #E3F2FD;
+    border: 2px solid #1E88E5;
+}
+
+.detailed-grades {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.grades-section {
+    margin-bottom: 2rem;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow-x: auto;
+    display: block;
+}
+
+.grades-table th, .grades-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.grades-table th {
+    background-color: #1E88E5;
+    color: white;
+    font-weight: bold;
+}
+
+.learning-progress {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-container {
+    margin-top: 1.5rem;
+}
+
+.progress-item {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #F5F7FA;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* 课程日历样式 */
+.calendar-view {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.month-navigation button {
+    padding: 0.5rem 1rem;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    width: 100%;
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #ddd;
+}
+
+.day-header {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #1E88E5;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #ddd;
+}
+
+.day {
+    background-color: white;
+    padding: 1rem;
+    min-height: 100px;
+    position: relative;
+}
+
+.day.empty {
+    background-color: #F5F7FA;
+}
+
+.day-number {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.event {
+    background-color: #1E88E5;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.upcoming-events {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-list {
+    margin-top: 1.5rem;
+}
+
+.event-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.event-date {
+    background-color: #1E88E5;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    min-width: 100px;
+}
+
+.event-details h4 {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+}
+
+/* 项目展示区样式 */
+.project-categories {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.category-filters {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #F5F7FA;
+    color: #333;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #1E88E5;
+    color: white;
+    border-color: #1E88E5;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-content h3 {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.project-tags {
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #F5F7FA;
+    color: #1E88E5;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #1E88E5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-submission {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.submission-info {
+    margin-top: 1.5rem;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #1E88E5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-info h3, .footer-links h3 {
+    color: #1E88E5;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #1E88E5;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #555;
+    color: #999;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .resource-search input {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .resource-search button {
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    .quiz-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .event-item {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .calendar-header, .calendar-body {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .day {
+        padding: 0.5rem;
+        min-height: 80px;
+    }
+    
+    .event {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+}
