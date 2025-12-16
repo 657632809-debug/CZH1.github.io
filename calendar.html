@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程日历 - 电子商务物流管理</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>电子商务物流管理</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="syllabus.html">教学大纲</a></li>
+                        <li><a href="resources.html">学习资源</a></li>
+                        <li><a href="assignments.html">作业与测验</a></li>
+                        <li><a href="discussion.html">互动讨论</a></li>
+                        <li><a href="grades.html">成绩查询</a></li>
+                        <li><a href="calendar.html">课程日历</a></li>
+                        <li><a href="projects.html">项目展示</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="calendar">
+            <div class="container">
+                <h2>课程日历</h2>
+                
+                <div class="calendar-view">
+                    <h3>2025年春季学期</h3>
+                    <div class="month-navigation">
+                        <button type="button" id="prev-month">上一月</button>
+                        <h4 id="current-month">3月 2025</h4>
+                        <button type="button" id="next-month">下一月</button>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-header">
+                            <div class="day-header">日</div>
+                            <div class="day-header">一</div>
+                            <div class="day-header">二</div>
+                            <div class="day-header">三</div>
+                            <div class="day-header">四</div>
+                            <div class="day-header">五</div>
+                            <div class="day-header">六</div>
+                        </div>
+                        <div class="calendar-body">
+                            <!-- 3月日历 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">
+                                <span class="day-number">1</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">2</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">3</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">4</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">5</span>
+                                <div class="event">作业截止</div>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">6</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">7</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">8</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">9</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">10</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">11</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">12</span>
+                                <div class="event">测验</div>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">13</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">14</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">15</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">16</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">17</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">18</span>
+                                <div class="event">实训开始</div>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">19</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">20</span>
+                                <div class="event">实训报告截止</div>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">21</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">22</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">23</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">24</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">25</span>
+                                <div class="event">案例研讨</div>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">26</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">27</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">28</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">29</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">30</span>
+                            </div>
+                            <div class="day">
+                                <span class="day-number">31</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upcoming-events">
+                    <h3>近期安排</h3>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-date">2025-03-25</div>
+                            <div class="event-details">
+                                <h4>案例研讨：京东物流模式分析</h4>
+                                <p>时间：14:00-16:00 | 地点：电商实训教室</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">2025-04-01</div>
+                            <div class="event-details">
+                                <h4>第3-4周测验</h4>
+                                <p>时间：10:00-10:30 | 线上测验</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">2025-04-05</div>
+                            <div class="event-details">
+                                <h4>物流成本核算实训报告截止</h4>
+                                <p>提交截止时间：23:59</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">2025-04-12</div>
+                            <div class="event-details">
+                                <h4>期中考试</h4>
+                                <p>时间：14:00-15:30 | 地点：多媒体教室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>电子商务物流管理</h3>
+                    <p>主编团队：李菁、曾德华、陆玉馨</p>
+                    <p>联系方式：可联系出版社获取</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="syllabus.html">教学大纲</a></li>
+                        <li><a href="resources.html">学习资源</a></li>
+                        <li><a href="assignments.html">作业与测验</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 电子商务物流管理课程. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
